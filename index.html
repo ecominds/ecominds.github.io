@@ -14,6 +14,9 @@
     .accordion-button:not(.collapsed)::after {
       background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
     }
+.topics .title{
+	font-weight:bold;
+}
 </style>
 </head>
 <body>
@@ -38,22 +41,54 @@
     <div class="tab-content">
         <div class="tab-pane fade show active" id="coreJavaTab">
             <h4 class="mt-2">coreJava tab content</h4>
-            <div class='accordion' id='coreJavaAccord'>
-                <div class='accordion-item'>
-                    <h2 class='accordion-header' id='headingOne'>
-                        <button type='button' class='accordion-button collapsed' data-bs-toggle='collapse' data-bs-target='#collapseOne'>
-                            OOPS Concept
-                        </button>									
-                    </h2>
-                    <div id='collapseOne' class='accordion-collapse collapse' data-bs-parent='#coreJavaAccord'>
-                        <div class='card-body'>
-                            <p>	
-                                Describe OOPs Concept
-                            </p>
-                            </div>
-                        </div>
-                    </div>
-            </div>
+            <div>
+		 <ul class='topics'>
+			<li class='title'>OOPS Concept</li>
+			<li>Abstraction & Encapsulation</li>
+			<li>Inheritance & Polymorphism</li>
+			<li>Association, Aggregation & Composition</li>
+			<li class='title'>Collection Framework</li>
+			<li>HashCode AND/OR Equals method </li>
+			<li>Comparable vs Comparator </li>
+			<li>TreeMap, TreeSet, synchronizedSet</li>
+			<li>HashMap vs Hashtable </li>
+			<li>LinkedList vs doubly LinkedList </li>
+			<li> synchronizedList, synchronizedMap, synchronizedSet, synchronizedCollection</li>
+			<li>Set<T> singleton (T), singletonList, singletonMap </li>
+			<li>unmodifiableList, unmodifiableMap, unmodifiableCollection </li>
+			<li>binarySearch </li>
+			<li>Sorting Techniques </li>
+			<li class='title'>Exception Handling </li>
+			<li>Throwable </li>
+			<li>Exception Vs Error </li>
+			<li>Checked Vs Unchecked Exception </li>
+			<li>Piped Catch Exception </li>
+			<li>try-catch-finally </li>
+			<li>try-catch in java8 </li>
+			<li class='title'>File Handling </li>
+			<li>Serialization </li>
+			<li>Transient</li>
+			<li>Clonable </li>
+			<li>IO Operations: BufferedReader/Writer, FileReader/Write, ObjectInputStream/ ObjectOutputStream </li>
+			<li>Exception in file handling </li>
+			<li class='title'>Threading & Thread-safe Concept</li>
+			<li>Thread/Task vs Process</li>
+			<li>Thread Vs Runnable </li>
+			<li>Life cycle, Thread priorities & Daemon Thread </li>
+			<li>Sleep vs yield </li>
+			<li>Concurrency (Synchronization, handling thread dead-locks, volatile) </li>
+			<li>Inter-thread communication (wait, join, notify, notify- all) </li>
+			<li>Immutability </li>
+			<li>Thread-pool </li>
+			<li>Executor Framework </li>
+			<li class='title'>Memory Management</li>
+			<li>Heap </li>
+			<li>Stack </li>
+			<li>Garbage Collection </li>
+			<li>Thread dump, Heap dump </li>
+			<li>Class Loader</li>
+		</ul>   
+	    </div>	
         </div>
         <div class="tab-pane fade" id="designPatternsTab">
             <h4 class="mt-2">designPatterns tab content</h4>
