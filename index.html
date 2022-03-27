@@ -14,8 +14,13 @@
     .accordion-button:not(.collapsed)::after {
       background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
     }
-.topics .title{
-	font-weight:bold;
+ul.topics li {
+    font-size: 10pt;
+}
+ul.topics .title{
+    font-weight: bold;
+    margin-left: -10px;
+    font-size: 11pt;
 }
 </style>
 </head>
@@ -29,82 +34,109 @@
             <a href="#designPatternsTab" class="nav-link" data-bs-toggle="tab">Design Patterns</a>
         </li>
         <li class="nav-item">
-            <a href="#springFrameworkTab" class="nav-link" data-bs-toggle="tab">Spring Framework</a>
-        </li>
-        <li class="nav-item">
-            <a href="#microServicesTab" class="nav-link" data-bs-toggle="tab">Micro-services</a>
-        </li>
-        <li class="nav-item">
-            <a href="#cloudTechTab" class="nav-link" data-bs-toggle="tab">Cloud Technologies</a>
+            <a href="#java8Tab" class="nav-link" data-bs-toggle="tab">Java 8</a>
         </li>
     </ul>
     <div class="tab-content">
         <div class="tab-pane fade show active" id="coreJavaTab">
-            <h4 class="mt-2">coreJava tab content</h4>
-            <div>
-		 <ul class='topics'>
-			<li class='title'>OOPS Concept</li>
-			<li>Abstraction & Encapsulation</li>
-			<li>Inheritance & Polymorphism</li>
-			<li>Association, Aggregation & Composition</li>
-			<li class='title'>Collection Framework</li>
-			<li>HashCode AND/OR Equals method </li>
-			<li>Comparable vs Comparator </li>
-			<li>TreeMap, TreeSet, synchronizedSet</li>
-			<li>HashMap vs Hashtable </li>
-			<li>LinkedList vs doubly LinkedList </li>
-			<li> synchronizedList, synchronizedMap, synchronizedSet, synchronizedCollection</li>
-			<li>Set<T> singleton (T), singletonList, singletonMap </li>
-			<li>unmodifiableList, unmodifiableMap, unmodifiableCollection </li>
-			<li>binarySearch </li>
-			<li>Sorting Techniques </li>
-			<li class='title'>Exception Handling </li>
-			<li>Throwable </li>
-			<li>Exception Vs Error </li>
-			<li>Checked Vs Unchecked Exception </li>
-			<li>Piped Catch Exception </li>
-			<li>try-catch-finally </li>
-			<li>try-catch in java8 </li>
-			<li class='title'>File Handling </li>
-			<li>Serialization </li>
-			<li>Transient</li>
-			<li>Clonable </li>
-			<li>IO Operations: BufferedReader/Writer, FileReader/Write, ObjectInputStream/ ObjectOutputStream </li>
-			<li>Exception in file handling </li>
-			<li class='title'>Threading & Thread-safe Concept</li>
-			<li>Thread/Task vs Process</li>
-			<li>Thread Vs Runnable </li>
-			<li>Life cycle, Thread priorities & Daemon Thread </li>
-			<li>Sleep vs yield </li>
-			<li>Concurrency (Synchronization, handling thread dead-locks, volatile) </li>
-			<li>Inter-thread communication (wait, join, notify, notify- all) </li>
-			<li>Immutability </li>
-			<li>Thread-pool </li>
-			<li>Executor Framework </li>
-			<li class='title'>Memory Management</li>
-			<li>Heap </li>
-			<li>Stack </li>
-			<li>Garbage Collection </li>
-			<li>Thread dump, Heap dump </li>
-			<li>Class Loader</li>
-		</ul>   
-	    </div>	
+            <h4 class="mt-2">Core Java Topics</h4>
+	    <ul class='topics'>
+		<li class='title'>OOPS Concept</li>
+		<li>Abstraction & Encapsulation</li>
+		<li>Inheritance & Polymorphism</li>
+		<li>Association, Aggregation & Composition</li>
+		<li class='title'>Collection Framework</li>
+		<li>HashCode AND/OR Equals method </li>
+		<li>Comparable vs Comparator </li>
+		<li>TreeMap, TreeSet, synchronizedSet</li>
+		<li>HashMap vs Hashtable </li>
+		<li>LinkedList vs doubly LinkedList </li>
+		<li> synchronizedList, synchronizedMap, synchronizedSet, synchronizedCollection</li>
+		<li>Set<T> singleton (T), singletonList, singletonMap </li>
+		<li>unmodifiableList, unmodifiableMap, unmodifiableCollection </li>
+		<li>binarySearch </li>
+		<li>Sorting Techniques </li>
+		<li class='title'>Exception Handling </li>
+		<li>Throwable </li>
+		<li>Exception Vs Error </li>
+		<li>Checked Vs Unchecked Exception </li>
+		<li>Piped Catch Exception </li>
+		<li>try-catch-finally </li>
+		<li>try-catch in java8 </li>
+		<li class='title'>File Handling </li>
+		<li>Serialization </li>
+		<li>Transient</li>
+		<li>Clonable </li>
+		<li>IO Operations: BufferedReader/Writer, FileReader/Write, ObjectInputStream/ ObjectOutputStream </li>
+		<li>Exception in file handling </li>
+		<li class='title'>Threading & Thread-safe Concept</li>
+		<li>Thread/Task vs Process</li>
+		<li>Thread Vs Runnable </li>
+		<li>Life cycle, Thread priorities & Daemon Thread </li>
+		<li>Sleep vs yield </li>
+		<li>Concurrency (Synchronization, handling thread dead-locks, volatile) </li>
+		<li>Inter-thread communication (wait, join, notify, notify- all) </li>
+		<li>Immutability </li>
+		<li>Thread-pool </li>
+		<li>Executor Framework </li>
+		<li class='title'>Memory Management</li>
+		<li>Heap </li>
+		<li>Stack </li>
+		<li>Garbage Collection </li>
+		<li>Thread dump, Heap dump </li>
+		<li>Class Loader</li>
+	    </ul>   
         </div>
         <div class="tab-pane fade" id="designPatternsTab">
-            <h4 class="mt-2">designPatterns tab content</h4>
-            <p></p>
+            <h4 class="mt-2">Design Patterns Topics</h4>
+            <ul class='topics'>
+		<li class='title'>Creational Design Pattern</li>
+		<li>Singleton</li>
+		<li>Factory & AbstractFactory</li>
+		<li>Builder</li>
+		<li>Prototype</li>
+		<li class='title'>Structural Design Pattern</li>
+		<li>Adapter</li>
+		<li>Composite</li>
+		<li>Proxy</li>
+		<li>Façade</li>
+		<li>Decorator</li>
+		<li>Bridge</li>
+		<li>Flyweight</li>
+		<li class='title'>Behavioural Design Pattern</li>
+		<li>Chain of Responsibility</li>
+		<li>Observer</li>
+		<li>Iterator</li>
+		<li>Command</li>
+		<li>Visitor</li>
+		<li>Mediator</li>
+		<li>Interceptor</li>
+		<li>Strategy</li>
+		<li>Memento</li>
+		<li>State</li>
+		<li class='title'>SOLID Principal</li>
+	    </ul>
         </div>
-        <div class="tab-pane fade" id="springFrameworkTab">
-            <h4 class="mt-2">springFramework tab content</h4>
-            <p></p>
-        </div>
-        <div class="tab-pane fade" id="microServicesTab">
-            <h4 class="mt-2">microServices tab content</h4>
-            <p></p>
-        </div>
-        <div class="tab-pane fade" id="cloudTechTab">
-            <h4 class="mt-2">cloudTech tab content</h4>
-            <p></p>
+        <div class="tab-pane fade" id="java8Tab">
+            <h4 class="mt-2">Java * Features</h4>
+            <ul class='topics'>
+		<li>Functional Programming</li>
+		<li>Functional Interface</li>
+		<li>Lambda Expressions</li>
+		<li>Method/ Constructer Reference</li>
+		<li>default/ static Method in Interface</li>
+		<li>Optional</li>
+		<li>Supplier, Consumer etc</li>
+		<li>Predicate, Function and BinaryOperator interfaces</li>
+		<li>forEach method</li>
+		<li>Base64 Encode/Decode</li>
+		<li>New Date API</li>
+		<li>Stream API</li>
+		<li>Collection API improvements</li>
+		<li>IO Enhancements</li>
+		<li>JDBC Enhancement</li>
+		<li>Java8 Security Enhancement</li>
+	     </ul>	    
         </div>
     </div>
 </div>
