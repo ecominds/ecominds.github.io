@@ -7,13 +7,23 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <style type='text/css'>
 ul.topics li {
-    font-size: 10pt;
+    font-size: 11pt;
+  margin-left: 5px;
 }
 ul.topics .title{
     font-weight: bold;
-    margin-left: -10px;
-    font-size: 11pt;
+    margin-left: -25px;
+    font-size: 12pt;
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
 }
+.summary{
+    border: 1px solid #eaeaea;
+    border-width: 1px 0;
+    margin: 20px 0;
+    padding: 10px 0;
+    color: #8e9aa6;
+}  
 </style>
 </head>
 <body>
@@ -45,27 +55,15 @@ ul.topics .title{
                 </div>
             </div>
         </div>
-</nav>	
-<div class="m-4">
-    <ul class="nav nav-tabs" id='myTab'>
-        <li class="nav-item">
-            <a href="#coreJavaTab" class="nav-link active" data-bs-toggle="tab">Core Java</a>
-        </li>
-        <li class="nav-item">
-            <a href="#designPatternsTab" class="nav-link" data-bs-toggle="tab">Design Patterns</a>
-        </li>
-        <li class="nav-item">
-            <a href="#java8Tab" class="nav-link" data-bs-toggle="tab">Java 8</a>
-        </li>
-    </ul>
-    <div class="tab-content">
-        <div class="tab-pane fade show active" id="coreJavaTab">
-            <h4 class="mt-2">Core Java Topics</h4>
-	    <ul class='topics'>
+</nav>
+<div class="container clearfix">
+  <h1>Core Java <span>Topics</span></h1>
+   <p class="summary">This section contains the core java topics </p>
+  <ul class='topics'>
 		<li class='title'>OOPS Concept</li>
-		<li>Abstraction & Encapsulation</li>
-		<li>Inheritance & Polymorphism</li>
-		<li>Association, Aggregation & Composition</li>
+		<li>Abstraction &amp; Encapsulation</li>
+		<li>Inheritance &amp; Polymorphism</li>
+		<li>Association, Aggregation &amp; Composition</li>
 		<li class='title'>Collection Framework</li>
 		<li>HashCode AND/OR Equals method </li>
 		<li>Comparable vs Comparator </li>
@@ -90,10 +88,10 @@ ul.topics .title{
 		<li>Clonable </li>
 		<li>IO Operations: BufferedReader/Writer, FileReader/Write, ObjectInputStream/ ObjectOutputStream </li>
 		<li>Exception in file handling </li>
-		<li class='title'>Threading & Thread-safe Concept</li>
+		<li class='title'>Threading &amp; Thread-safe Concept</li>
 		<li>Thread/Task vs Process</li>
 		<li>Thread Vs Runnable </li>
-		<li>Life cycle, Thread priorities & Daemon Thread </li>
+		<li>Life cycle, Thread priorities &amp; Daemon Thread </li>
 		<li>Sleep vs yield </li>
 		<li>Concurrency (Synchronization, handling thread dead-locks, volatile) </li>
 		<li>Inter-thread communication (wait, join, notify, notify- all) </li>
@@ -106,60 +104,7 @@ ul.topics .title{
 		<li>Garbage Collection </li>
 		<li>Thread dump, Heap dump </li>
 		<li>Class Loader</li>
-	    </ul>   
-        </div>
-        <div class="tab-pane fade" id="designPatternsTab">
-            <h4 class="mt-2">Design Patterns Topics</h4>
-            <ul class='topics'>
-		<li class='title'>Creational Design Pattern</li>
-		<li>Singleton</li>
-		<li>Factory & AbstractFactory</li>
-		<li>Builder</li>
-		<li>Prototype</li>
-		<li class='title'>Structural Design Pattern</li>
-		<li>Adapter</li>
-		<li>Composite</li>
-		<li>Proxy</li>
-		<li>Façade</li>
-		<li>Decorator</li>
-		<li>Bridge</li>
-		<li>Flyweight</li>
-		<li class='title'>Behavioural Design Pattern</li>
-		<li>Chain of Responsibility</li>
-		<li>Observer</li>
-		<li>Iterator</li>
-		<li>Command</li>
-		<li>Visitor</li>
-		<li>Mediator</li>
-		<li>Interceptor</li>
-		<li>Strategy</li>
-		<li>Memento</li>
-		<li>State</li>
-		<li class='title'>SOLID Principal</li>
-	    </ul>
-        </div>
-        <div class="tab-pane fade" id="java8Tab">
-            <h4 class="mt-2">Java 8 Features</h4>
-            <ul class='topics'>
-		<li>Functional Programming</li>
-		<li>Functional Interface</li>
-		<li>Lambda Expressions</li>
-		<li>Method/ Constructer Reference</li>
-		<li>default/ static Method in Interface</li>
-		<li>Optional</li>
-		<li>Supplier, Consumer etc</li>
-		<li>Predicate, Function and BinaryOperator interfaces</li>
-		<li>forEach method</li>
-		<li>Base64 Encode/Decode</li>
-		<li>New Date API</li>
-		<li>Stream API</li>
-		<li>Collection API improvements</li>
-		<li>IO Enhancements</li>
-		<li>JDBC Enhancement</li>
-		<li>Java8 Security Enhancement</li>
-	     </ul>	    
-        </div>
-    </div>
+	    </ul> 
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
