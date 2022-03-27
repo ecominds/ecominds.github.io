@@ -98,7 +98,9 @@ ul.topics .title{
 $(document).ready(function () {
    $("body").on("contextmenu",function(e){
      return false;
-   });
+   }).bind("cut copy paste",function(e) {
+      e.preventDefault();
+  });
 });
 </script>
 </body>
